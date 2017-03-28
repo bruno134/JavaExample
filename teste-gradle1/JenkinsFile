@@ -1,0 +1,10 @@
+pipeline {
+    agent { docker 'gradle:3.4' }
+    stages {
+        stage('build') {
+            steps {
+                sh '/Users/bruno/eclipse/gradle-3.4.1/bin/gradle --version'
+            }
+        }
+    }
+}
